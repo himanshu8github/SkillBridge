@@ -2,7 +2,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { z } from "zod";
 import config from "../config/secret.js";
-import { Admin } from "../models/admin.model.js";
+import { Admin } from "../model/admin.model.js";
 
 export const signup = async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
